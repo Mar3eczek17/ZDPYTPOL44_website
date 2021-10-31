@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Tytuł dokumentu</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body onload="documentLoaded()">
+    <h1>Kalkulator</h1>
+    <div>
+        <form>
+            <div>
+                Liczba 1:
+                <input id="liczba1" type="number" name="liczba1">
+            </div>
+            <div>
+                Liczba 2:
+                <input id="liczba2" type="number" name="liczba2">
+            </div>
+        </form>
+        <button onclick="sum()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mul()">*</button>
+        <button onclick="div()">/</button>
+    </div>
+    <div id="calculator-container"></div>
+
+
+    <h1>Zegar Analogowy</h1>
+    <div class="clock">
+        <div class="hand seconds animate"></div>
+        <div class="hand minutes animate"></div>
+        <div class="hand hours animate"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
